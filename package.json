@@ -15,7 +15,7 @@
     "copy-to-functions": "npm run --prefix functions copy",
     "build:functions": "npm run --prefix functions build",
     "build:all": "npm run build:ssr && npm run copy-to-functions && npm run build:functions",
-    "build-and-deploy": "npm run build:all & firebase deploy"
+    "build-and-deploy": "npm run build:all && firebase deploy"
   },
   "author": {
     "name": "yuriy deneha",

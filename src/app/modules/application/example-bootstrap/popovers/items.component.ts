@@ -10,7 +10,6 @@ export class PopoversComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.loadScript('./assets/params/js/popovers.js');
   }
 
   loadScript(name: string): void {

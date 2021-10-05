@@ -6,7 +6,7 @@
           <h1 class="h5">Feature : Components</h1>
           <hr>
         </div>
-  
+
         <div *ngIf="!smartphoneSelected">
           <div class="alert alert-primary" role="alert">
             Click on <button type="button" class="btn btn-primary btn-sm">n° x</button>
@@ -19,7 +19,7 @@
             </div>
           </div>
         </div>
-  
+
         <div *ngIf="smartphoneSelected">
           <div class="alert alert-info" role="alert">
             Click on <button type="button" class="btn btn-info btn-sm">Reset</button>
@@ -28,10 +28,6 @@
           <div class="card text-center">
             <h5 class="card-title">Smartphone</h5>
             <div class="row no-gutters">
-              <div class="col-md-6 pt-2 pb-2">
-                <img src="assets/params/images/smartphones/{{ smartphoneSelected.name }}.jpg" class="card-img"
-                  alt="name">
-              </div>
               <div class="col-md-6">
                 <div class="card-body">
                   <h6 class="card-subtitle mb-2 text-primary font-weight-bold">{{ smartphoneSelected.name }}</h6>
@@ -46,7 +42,7 @@
         </div>
       </div>
     </div>
-  
+
     <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
       <div class="row">
         <div *ngFor="let smartphone of smartphones; let i=index"
@@ -55,5 +51,5 @@
         </div>
       </div>
     </div>
-  
+
   </div>

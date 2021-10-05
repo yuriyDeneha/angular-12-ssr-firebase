@@ -55,7 +55,6 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.loadScript('assets/params/js/index.js');
   }
 
   loadScript(name: string): void {

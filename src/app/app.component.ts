@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-starter';
+  title = 'angular-12-ssr-firebase-starter';
   version = 'Angular version 12.2.5';
 }

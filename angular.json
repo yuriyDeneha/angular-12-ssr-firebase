@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-starter": {
+    "angular-12-ssr-firebase-starter": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-starter/browser",
+            "outputPath": "dist/angular-12-ssr-firebase-starter/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-starter:build:production"
+              "browserTarget": "angular-12-ssr-firebase-starter:build:production"
             },
             "development": {
-              "browserTarget": "angular-starter:build:development"
+              "browserTarget": "angular-12-ssr-firebase-starter:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-starter:build"
+            "browserTarget": "angular-12-ssr-firebase-starter:build"
           }
         },
         "test": {
@@ -107,7 +107,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/angular-starter/server",
+            "outputPath": "dist/angular-12-ssr-firebase-starter/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -133,12 +133,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "angular-starter:build:development",
-              "serverTarget": "angular-starter:server:development"
+              "browserTarget": "angular-12-ssr-firebase-starter:build:development",
+              "serverTarget": "angular-12-ssr-firebase-starter:server:development"
             },
             "production": {
-              "browserTarget": "angular-starter:build:production",
-              "serverTarget": "angular-starter:server:production"
+              "browserTarget": "angular-12-ssr-firebase-starter:build:production",
+              "serverTarget": "angular-12-ssr-firebase-starter:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -152,10 +152,10 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-starter:build:production"
+              "browserTarget": "angular-12-ssr-firebase-starter:build:production"
             },
             "development": {
-              "browserTarget": "angular-starter:build:development"
+              "browserTarget": "angular-12-ssr-firebase-starter:build:development"
             }
           },
           "defaultConfiguration": "production"
@@ -163,5 +163,5 @@
       }
     }
   },
-  "defaultProject": "angular-starter"
+  "defaultProject": "angular-12-ssr-firebase-starter"
 }

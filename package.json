@@ -1,5 +1,5 @@
 {
-  "name": "angular-starter",
+  "name": "angular-12-ssr-firebase-starter",
   "version": "12.2.5",
   "scripts": {
     "ng": "ng",
@@ -7,19 +7,20 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run angular-starter:serve-ssr",
-    "serve:ssr": "node dist/angular-starter/server/main.js",
-    "build:ssr": "ng build && ng run angular-starter:server",
-    "prerender": "ng run angular-starter:prerender",
+    "dev:ssr": "ng run angular-12-ssr-firebase-starter:serve-ssr",
+    "serve:ssr": "node dist/angular-12-ssr-firebase-starter/server/main.js",
+    "build:ssr": "ng build && ng run angular-12-ssr-firebase-starter:server",
+    "prerender": "ng run angular-12-ssr-firebase-starter:prerender",
 
     "copy-to-functions": "npm run --prefix functions copy",
     "build:functions": "npm run --prefix functions build",
-    "build:all": "npm run build:ssr && npm run copy-to-functions && npm run build:functions"
+    "build:all": "npm run build:ssr && npm run copy-to-functions && npm run build:functions",
+    "build-and-deploy": "npm run build:all & firebase deploy"
   },
   "author": {
-    "name": "danny",
-    "email": "danny@ganatan.com",
-    "url": "https://www.ganatan.com/"
+    "name": "yuriy deneha",
+    "email": "yuriy.deneha@gmail.com",
+    "url": "https://reyble.team/"
   },
   "private": true,
   "dependencies": {

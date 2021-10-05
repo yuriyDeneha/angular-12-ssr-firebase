@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/angular-starter'),
+      dir: require('path').join(__dirname, './coverage/angular-12-ssr-firebase-starter'),
       subdir: '.',
       reporters: [
         { type: 'html' },

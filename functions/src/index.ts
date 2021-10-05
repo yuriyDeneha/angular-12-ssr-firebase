@@ -8,5 +8,5 @@ import * as functions from 'firebase-functions';
 //   response.send("Hello from Firebase!");
 // });
 
-const universal = require(`${process.cwd()}/dist/angular-starter/server/main`).app();
+const universal = require(`${process.cwd()}/dist/angular-12-ssr-firebase-starter/server/main`).app();
 exports.ssr = functions.https.onRequest(universal);

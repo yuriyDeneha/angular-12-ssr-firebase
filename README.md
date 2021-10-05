@@ -1,4 +1,4 @@
-# Angular 12 Example Server Side Rendering
+# Angular 12 project starter with Firebase hoisting and ssr by using Angular Universal + Firebase functions
 
 > An Angular starter kit featuring [Angular 12.2.5](https://angular.io), [Angular CLI 12.2.5](https://cli.angular.io/)
 

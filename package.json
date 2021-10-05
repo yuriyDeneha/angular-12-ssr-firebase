@@ -10,7 +10,11 @@
     "dev:ssr": "ng run angular-starter:serve-ssr",
     "serve:ssr": "node dist/angular-starter/server/main.js",
     "build:ssr": "ng build && ng run angular-starter:server",
-    "prerender": "ng run angular-starter:prerender"
+    "prerender": "ng run angular-starter:prerender",
+
+    "copy-to-functions": "npm run --prefix functions copy",
+    "build:functions": "npm run --prefix functions build",
+    "build:all": "npm run build:ssr && npm run copy-to-functions && npm run build:functions"
   },
   "author": {
     "name": "danny",
@@ -32,6 +36,8 @@
     "@nguniversal/express-engine": "12.1.0",
     "bootstrap": "5.1.1",
     "express": "4.17.1",
+    "firebase": "^9.1.1",
+    "firebase-functions": "^3.15.7",
     "rxjs": "7.3.0",
     "tslib": "2.3.1",
     "zone.js": "0.11.4"

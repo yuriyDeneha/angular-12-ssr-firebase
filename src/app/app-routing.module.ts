@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-import { HomeComponent } from './modules/general/home/home.component';
 import { NotFoundComponent } from './modules/general/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, },
+  {
+    path: 'home',
+    loadChildren: () => import('./modules/general/home/home.module')
+      .then(mod => mod.HomeModule)
+  },
   {
     path: 'template-driven-forms',
     loadChildren: () => import('./modules/application/example-template-driven-forms/tutorial.module')
@@ -25,12 +27,12 @@ const routes: Routes = [
     path: 'reactive-form',
     loadChildren: () => import('./modules/application/example-reactive-form/tutorial.module')
       .then(mod => mod.TutorialModule)
-  },    
+  },
   {
     path: 'bootstrap',
     loadChildren: () => import('./modules/application/example-bootstrap/tutorial.module')
       .then(mod => mod.TutorialModule)
-  },  
+  },
   {
     path: 'contact',
     loadChildren: () => import('./modules/general/contact/contact.module')
@@ -46,6 +48,7 @@ const routes: Routes = [
     loadChildren: () => import('./modules/general/signin/signin.module')
       .then(mod => mod.SigninModule)
   },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
 ];
 
